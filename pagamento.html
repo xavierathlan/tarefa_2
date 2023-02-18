@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Pagamento</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html"><li><i class="bi bi-person-lines-fill"></i></li></a>
+                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i></li>
+                <li><p class="localizacao">São Paulo-SP</p></li>
+                <li><i class="bi bi-image"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--<section id="pagamento">-->
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Primeiro Nome</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Marcus Antônio">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="marcus@example.com">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
+                        <input type="text" id="adr" name="address" placeholder="Rua da Esperança, 000">
+                        <label for="city"><i class="fa fa-institution"></i> Cidade</label>
+                        <input type="text" id="city" name="city" placeholder="Cabo do Sul">
+
+                        <div class="row">
+                        <div class="col-50">
+                            <label for="state">Estado</label>
+                            <input type="text" id="state" name="state" placeholder="RP">
+                        </div>
+                        <div class="col-50">
+                            <label for="zip">Cep</label>
+                            <input type="text" id="zip" name="zip" placeholder="00.000-111">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Pagamento</h3>
+                        <label for="fname">Cartões aceitos</label>
+                        <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Nome do Cartão</label>
+                        <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                        <label for="ccnum">Número do Cartão de Crédito</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Expira no mês de....</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="Setembro">
+
+                        <div class="row">
+                        <div class="col-50">
+                            <label for="expyear">Expira no ano de...</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2030">
+                        </div>
+                        <div class="col-50">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <label>
+                    <input type="checkbox" checked="checked" name="sameadr">Confirmo que as informações são verdadeiras</a>
+                    </label>
+                    <input type="submit" value="Continue com o checkout" class="btn">
+                </form>
+                </div>
+            </div>
+
+            <div class="col-25">
+                <div class="container">
+                <h4>Carrinho
+                    <span class="price" style="color:black">
+                    <i class="fa fa-shopping-cart"></i>
+                    <b>4</b>
+                    </span>
+                </h4>
+                <p><a href="#">Produto 1</a> <span class="price">R$15</span></p>
+                <p><a href="#">Produto 2</a> <span class="price">R$5</span></p>
+                <p><a href="#">Produto 3</a> <span class="price">R$8</span></p>
+                <p><a href="#">Produto 4</a> <span class="price">R$2</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>R$30</b></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="home.html">
+                <li class="footer-item"><i class="bi bi-house-fill"></i> <p class="footer-nome-item">HOME</p></li>
+            </a>
+            
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item"><i class="bi bi-emoji-smile"></i> <p class="footer-nome-item">CADASTRO USUÁRIO</p></li>
+            </a>
+
+            <a href="cadastrar_produto.html">
+                <li><i class="bi bi-upc-scan"></i> <p class="footer-nome-item">CADASTRO DE PRODUTO</p></li>
+            </a>
+
+            <a href="carrinho.html">
+                <li><i class="bi bi-cart"></i> <p class="footer-nome-item">CARRINHO PEDIDOS</p></li>
+            </a>
+
+            <a href="produto.html">
+                <li> <i class="bi bi-stickies"></i> <p class="footer-nome-item">PRODUTOS</p></li>
+            </a>
+        </ul>
+    </footer>
+</body>
+</html>
